@@ -9,7 +9,9 @@
 </head>
 <body>
     <header>
-        <img src="logo.png" alt="Gov Tech Logo" style="height:40px;">
+        <div class="logo-container">
+            <img src="logo.png" alt="Gov Tech Logo" class="logo">
+        </div>
 
         <nav>
            <ul>
@@ -22,91 +24,136 @@
         </nav>
     </header>
 
-    <h1>👋 Welcome <span style="color:#0a0a0a;"></span></h1>
-    <p>Your one-stop shop for <strong>Affordable, High-Quality</strong> laptops, phones, and accessories. Discover amazing deals designed for <span style="color:#090909;">students</span>, <span style="color:#ff6f61;">professionals</span>, and <span style="color:#00bfff;">gamers</span>.</p>
-    <a href="#products" class="btn">🚀 Start Shopping Now</a>
+    <section class="hero">
+           <h1>👋 Welcome<span style="color:#0a0a0a;"></span></h1>
+           <p>Your one-stop shop for <strong>Affordable, High-Quality</strong> laptops, phones, and accessories. Discover amazing deals designed for <span style="color:#090909;">students</span>, <span style="color:#ff6f61;">professionals</span>, and <span style="color:#00bfff;">gamers</span>.</p>
+           <a href="#products" class="btn">🚀 Start Shopping Now</a>
+    </section>
+   
     
     <!-- Categories -->
-      <h2>Laptop Categories</h2>
-      <p>Choose based on performance & budget</p>
-      <a href="#basic-laptops"><span>💻</span>Basic Laptops</a>
-      <a href="#mid-laptops"><span>⚡</span>Mid-Range Laptops</a>
-      <a href="#high-laptops"><span>🚀</span>High-End Laptops</a>
-      <a href="#gaming-laptops"><span>🎮</span>Gaming Laptops</a>
+    <section class="categories" id="categories">
+        <h2>Laptop Categories</h2>
+        <p>Choose based on performance & budget</p>
+        <div class="category-grid">
+             <a href="#basic-laptops" class="category-card"><span>💻</span>Basic Laptops</a>
+             <a href="#mid-laptops" class="category-card"><span>⚡</span>Mid-Range Laptops</a>
+             <a href="#high-laptops" class="category-card"><span>🚀</span>High-End Laptops</a>
+             <a href="#gaming-laptops" class="category-card"><span>🎮</span>Gaming Laptops</a>
+        </div>
+    </section>
 
      <!-- Products Section -->
+    <section class="products" id="products">
+
        <h2>Featured Laptops</h2>
 
         <!-- Basic Laptops -->
-      <h3>💻 Basic Laptops</h3>
-          <img src="" alt="Basic Laptop" style="width:100%;">
+      <div id="basic-laptops">
+       <h3>💻 Basic Laptops</h3>
+         <div class="category-products">
+
+         <div class="product-card" data-name="HP Stream" data-price="3999">
+          <img src="images/laptop-basic.jpg" alt="Basic Laptop" style="width:100%;">
           <h4>HP Stream</h4>
           <p>R3,999</p>
           <button>Add to Cart</button>
-        
-          <img src="" alt="Basic Laptop" style="width:100%;">
+         </div>
+
+         <div class="product-card" data-name="Lenovo IdeaPad 1" data-price="4499">
+          <img src="images/laptop-basic2.jpg" alt="Basic Laptop" style="width:100%;">
           <h4>Lenovo IdeaPad 1</h4>
           <p>R4,499</p>
           <button>Add to Cart</button>
-        
-          <img src="" alt="Basic Laptop" style="width:100%;">
+         </div>
+
+         <div class="product-card" data-name="Acer Aspire 3" data-price="4999">
+          <img src="images/laptop-basic3.jpg" alt="Basic Laptop" style="width:100%;">
           <h4>Acer Aspire 3</h4>
           <p>R4,999</p>
           <button>Add to Cart</button>
-        
+          </div>
+         </div>
+      </div>
     <!-- Mid-range Laptops -->
-      <h3>⚡ Mid-Range Laptops</h3>
-          <img src="" alt="Mid Laptop" style="width:100%;">
-          <h4>Dell Inspiron</h4>
-          <p>R7,999</p>
-          <button>Add to Cart</button>
-        
-          <img src="" alt="Mid Laptop" style="width:100%;">
-          <h4>HP Pavilion 14</h4>
-          <p>R8,999</p>
-          <button>Add to Cart</button>
-        
-          <img src="" alt="Mid Laptop" style="width:100%;">
-          <h4>Asus VivoBook</h4>
-          <p>R9,999</p>
-          <button>Add to Cart</button>
+     <div id="mid-laptops">
+       <h3>⚡ Mid-Range Laptops</h3>
+        <div class="category-products">
+           <div class="product-card" data-name="Dell Inspiron" data-price="7999">
+             <img src="images/laptop-mid.jpg" alt="Mid Laptop" style="width:100%;">
+             <h4>Dell Inspiron</h4>
+             <p>R7,999</p>
+             <button>Add to Cart</button>
+           </div>
 
+           <div class="product-card" data-name="HP Pavilion 14" data-price="8999">
+             <img src="images/laptop-mid2.jpg" alt="Mid Laptop" style="width:100%;">
+             <h4>HP Pavilion 14</h4>
+             <p>R8,999</p>
+             <button>Add to Cart</button>
+           </div>
+        
+          <div class="product-card" data-name="Asus VivoBook" data-price="9999">
+            <img src="images/laptop-mid3.jpg" alt="Mid Laptop" style="width:100%;">
+            <h4>Asus VivoBook</h4>
+            <p>R9,999</p>
+            <button>Add to Cart</button>
+          </div>
+        </div>
+     </div>
          <!-- High-end Laptops -->
+      <div id="high-laptops">
       <h3>🚀 High-End Laptops</h3>
-     
-          <img src="" alt="High End Laptop" style="width:100%;">
-          <h4>MacBook Pro</h4>
-          <p>R19,999</p>
-          <button>Add to Cart</button>
-       
-          <img src="" alt="High End Laptop" style="width:100%;">
-          <h4>Dell XPS 13</h4>
-          <p>R17,999</p>
-          <button>Add to Cart</button>
- 
-          <img src="" alt="High End Laptop" style="width:100%;">
-          <h4>HP Spectre x360</h4>
-          <p>R18,999</p>
-          <button>Add to Cart</button>  
+        <div class="category-products">
+          <div class="product-card" data-name="MacBook Pro" data-price="19999">
+            <img src="images/laptop-high.jpg" alt="High End Laptop" style="width:100%;">
+            <h4>MacBook Pro</h4>
+            <p>R19,999</p>
+            <button>Add to Cart</button>
+          </div>
 
+          <div class="product-card" data-name="Dell XPS 13" data-price="17999">
+            <img src="images/laptop-high2.jpg" alt="High End Laptop" style="width:100%;">
+            <h4>Dell XPS 13</h4>
+            <p>R17,999</p>
+            <button>Add to Cart</button>
+          </div>
+          <div class="product-card" data-name="HP Spectre x360" data-price="18999">
+            <img src="images/laptop-high3.jpg" alt="High End Laptop" style="width:100%;">
+            <h4>HP Spectre x360</h4>
+            <p>R18,999</p>
+            <button>Add to Cart</button>  
+           </div>
+        </div>
+       </div>
          <!-- Gaming -->
-      <h3>🎮 Gaming Laptops</h3>
-   
-          <img src="" alt="Gaming Laptop" style="width:100%;">
-          <h4>Asus ROG</h4>
-          <p>R24,999</p>
-          <button>Add to Cart</button>
-       
-          <img src="" alt="Gaming Laptop" style="width:100%;">
-          <h4>MSI GF65</h4>
-          <p>R22,999</p>
-          <button>Add to Cart</button>
-        
-          <img src="" alt="Gaming Laptop" style="width:100%;">
-          <h4>Alienware M15</h4>
-          <p>R27,999</p>
-          <button>Add to Cart</button>
+      <div id="gaming-laptops">
+         <h3>🎮 Gaming Laptops</h3>
+         <div class="category-products">
+           <div class="product-card" data-name="Asus ROG" data-price="24999">
+             <img src="images/laptop-gaming.jpg" alt="Gaming Laptop" style="width:100%;">
+             <h4>Asus ROG</h4>
+             <p>R24,999</p>
+             <button>Add to Cart</button>
+           </div>
+          
+           <div class="product-card" data-name="MSI GF65" data-price="22999">
+             <img src="images/laptop-gaming2.jpg" alt="Gaming Laptop" style="width:100%;">
+             <h4>MSI GF65</h4>
+             <p>R22,999</p>
+             <button>Add to Cart</button>
+           </div>
 
+          <div class="product-card" data-name="Alienware M15" data-price="27999">
+            <img src="images/laptop-gaming3.jpg" alt="Gaming Laptop" style="width:100%;">
+            <h4>Alienware M15</h4>
+            <p>R27,999</p>
+            <button>Add to Cart</button>
+          </div>
+         </div>
+      </div>
+      
+     </section>
         <footer>
            <p>📍 Address: 123 Main Street, Johannesburg</p>
            <p>📞 Phone: +27 71 234 5678</p>
