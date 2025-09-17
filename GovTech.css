@@ -206,3 +206,23 @@ footer{
     color: white;
     margin-top: 40px;
 }
+
+#cart-items li{
+   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
+}
+
+.remove-btn {
+  color: red;
+  font-weight: bold;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.remove-btn:hover {
+  color: darkred;
+}
