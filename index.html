@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"> 
 <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width,initial-scale=1" />
@@ -19,7 +19,8 @@
               <li><a href="#categories">Categories</a></li>
               <li><a href="#products">Products</a></li>
               <li><a href="#contact">Contact</a></li>
-              <li><a href="#">🛒 Cart</a></li>
+             <li><a href="#" id="cart-link">🛒 Cart (<span id="cart-count">0</span>)</a></li>
+
            </ul>
         </nav>
     </header>
@@ -57,21 +58,21 @@
           <img src="images/laptop-basic.jpg" alt="Basic Laptop" style="width:100%;">
           <h4>HP Stream</h4>
           <p>R3,999</p>
-          <button>Add to Cart</button>
+          <button class="add-to-cart">Add to Cart</button>
          </div>
 
          <div class="product-card" data-name="Lenovo IdeaPad 1" data-price="4499">
           <img src="images/laptop-basic2.jpg" alt="Basic Laptop" style="width:100%;">
           <h4>Lenovo IdeaPad 1</h4>
           <p>R4,499</p>
-          <button>Add to Cart</button>
+          <button class="add-to-cart">Add to Cart</button>
          </div>
 
          <div class="product-card" data-name="Acer Aspire 3" data-price="4999">
           <img src="images/laptop-basic3.jpg" alt="Basic Laptop" style="width:100%;">
           <h4>Acer Aspire 3</h4>
           <p>R4,999</p>
-          <button>Add to Cart</button>
+          <button class="add-to-cart">Add to Cart</button>
           </div>
          </div>
       </div>
@@ -83,21 +84,21 @@
              <img src="images/laptop-mid.jpg" alt="Mid Laptop" style="width:100%;">
              <h4>Dell Inspiron</h4>
              <p>R7,999</p>
-             <button>Add to Cart</button>
+             <button class="add-to-cart">Add to Cart</button>
            </div>
 
            <div class="product-card" data-name="HP Pavilion 14" data-price="8999">
              <img src="images/laptop-mid2.jpg" alt="Mid Laptop" style="width:100%;">
              <h4>HP Pavilion 14</h4>
              <p>R8,999</p>
-             <button>Add to Cart</button>
+             <button class="add-to-cart">Add to Cart</button>
            </div>
         
           <div class="product-card" data-name="Asus VivoBook" data-price="9999">
             <img src="images/laptop-mid3.jpg" alt="Mid Laptop" style="width:100%;">
             <h4>Asus VivoBook</h4>
             <p>R9,999</p>
-            <button>Add to Cart</button>
+            <button class="add-to-cart">Add to Cart</button>
           </div>
         </div>
      </div>
@@ -109,20 +110,20 @@
             <img src="images/laptop-high.jpg" alt="High End Laptop" style="width:100%;">
             <h4>MacBook Pro</h4>
             <p>R19,999</p>
-            <button>Add to Cart</button>
+            <button class="add-to-cart">Add to Cart</button>
           </div>
 
           <div class="product-card" data-name="Dell XPS 13" data-price="17999">
             <img src="images/laptop-high2.jpg" alt="High End Laptop" style="width:100%;">
             <h4>Dell XPS 13</h4>
             <p>R17,999</p>
-            <button>Add to Cart</button>
+            <button class="add-to-cart">Add to Cart</button>
           </div>
           <div class="product-card" data-name="HP Spectre x360" data-price="18999">
             <img src="images/laptop-high3.jpg" alt="High End Laptop" style="width:100%;">
             <h4>HP Spectre x360</h4>
             <p>R18,999</p>
-            <button>Add to Cart</button>  
+            <button class="add-to-cart">Add to Cart</button>  
            </div>
         </div>
        </div>
@@ -134,21 +135,21 @@
              <img src="images/laptop-gaming.jpg" alt="Gaming Laptop" style="width:100%;">
              <h4>Asus ROG</h4>
              <p>R24,999</p>
-             <button>Add to Cart</button>
+             <button class="add-to-cart">Add to Cart</button>
            </div>
           
            <div class="product-card" data-name="MSI GF65" data-price="22999">
              <img src="images/laptop-gaming2.jpg" alt="Gaming Laptop" style="width:100%;">
              <h4>MSI GF65</h4>
              <p>R22,999</p>
-             <button>Add to Cart</button>
+             <button class="add-to-cart">Add to Cart</button>
            </div>
 
           <div class="product-card" data-name="Alienware M15" data-price="27999">
             <img src="images/laptop-gaming3.jpg" alt="Gaming Laptop" style="width:100%;">
             <h4>Alienware M15</h4>
             <p>R27,999</p>
-            <button>Add to Cart</button>
+            <button class="add-to-cart">Add to Cart</button>
           </div>
          </div>
       </div>
@@ -160,5 +161,7 @@
            <p>✉ Email: support@govtech.co.za</p>
            <p>&copy; 2025 Gov Tech. All rights reserved.</p>
         </footer>
+
+        <script src="main.js"></script>
 </body>
 </html>
