@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", () => {
             return;
           }
 
-          // Build a nicer cart popup with remove buttons
+          //  cart popup with remove buttons
           let cartBox = document.getElementById('cart-box');
           if (!cartBox) {
             cartBox = document.createElement('div');
@@ -91,8 +91,8 @@ document.addEventListener("DOMContentLoaded", () => {
             cartBox.style.right = '20px';
             cartBox.style.top = '70px';
             cartBox.style.width = '280px';
-            cartBox.style.background = '#fff';
-            cartBox.style.border = '1px solid #ccc';
+            cartBox.style.background = '#6711fcff';
+            cartBox.style.border = '1px solid #6410f4ff';
             cartBox.style.borderRadius = '8px';
             cartBox.style.padding = '10px';
             cartBox.style.zIndex = 10000;
