@@ -229,36 +229,3 @@ nav ul {
   list-style: none;
   gap: 20px;
 }
-
-/* Hamburger hidden on desktop */
-.menu-toggle {
-  display: none;
-}
-
-/* Mobile styles */
-@media (max-width: 768px) {
-  nav ul {
-    display: none; /* hide menu by default */
-    flex-direction: column;
-    background: #f9f9f9;
-    position: absolute;
-    top: 70px; /* below header */
-    right: 20px;
-    width: 220px;
-    padding: 15px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-    border-radius: 8px;
-  }
-
-  nav ul.show {
-    display: flex; /* show when toggled */
-  }
-
-  /* Show hamburger only on mobile */
-  .menu-toggle {
-    display: block;
-    font-size: 28px;
-    cursor: pointer;
-    margin-left: auto;
-  }
-}
